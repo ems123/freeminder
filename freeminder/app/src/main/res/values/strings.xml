@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">freeminder</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_registration">Registration</string>
+    <string name="app_header">freeminder</string>
+    <string name="add_customer">Add New</string>
+    <string name="import_contact">Import Contact</string>
+    <string name="add_detail">ADD DETAIL</string>
+    <string name="add_action">ADD ACTION</string>
+    <string name="spinner_title">Select Service</string>
+    <color name="app_heder_bg">#8CC63E</color>
+    <color name="btn_bg">#9f8CC63E</color>
+    <color name="title_txt_color">#FFFFFF</color>
+    <color name="list_txt_color">#333333</color>
+    <string name="title_activity_my_contacts">MyContacts</string>
+    <string name="title_activity_import__contact">Import Contacts</string>
+    <string name="title_activity_response_to_push">Notification</string>
+    <string name="title_activity_setting">Setting</string>
+</resources>

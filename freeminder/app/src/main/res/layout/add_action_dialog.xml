@@ -1,0 +1,314 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.95"
+        android:background="#A000" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:background="#A000" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.3"
+                        android:background="@color/app_heder_bg"
+                        android:baselineAligned="false" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.75"
+                            android:baselineAligned="false" >
+
+                            <LinearLayout
+                                android:id="@+id/ll_close_action"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical|center_horizontal" >
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:contentDescription="@string/app_name"
+                                    android:src="@drawable/icon_cancel" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.4" >
+
+                            <TextView
+                                android:id="@+id/txt_action_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_horizontal|center_vertical"
+                                android:text="@string/add_action"
+                                android:textColor="@color/title_txt_color"
+                                android:textSize="@dimen/title_txt" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.75"
+                            android:baselineAligned="false" >
+
+                            <Button
+                                android:id="@+id/btn_action_ok"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:background="@null"
+                                android:drawableLeft="@drawable/icon_checkmark"
+                                android:gravity="center"
+                                android:text="OK"
+                                android:textColor="@color/title_txt_color"
+                                android:textSize="@dimen/title_txt" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="0.15" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:orientation="vertical" >
+
+                            <EditText
+                                android:id="@+id/etxt_ac_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="5dp"
+                                android:hint="Action Name"
+                                android:inputType="text"
+                                android:paddingLeft="15dp"
+                                android:textColor="@color/list_txt_color"
+                                android:textSize="@dimen/app_txt" />
+
+                            <TextView
+                                android:id="@+id/txt_type"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="5dp"
+                                android:text="Action Type:"
+                                android:textColor="@color/list_txt_color"
+                                android:textSize="@dimen/app_txt" />
+
+                            <CheckBox
+                                android:id="@+id/check_email"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:paddingLeft="15dp"
+                                android:text="Email"
+                                android:textColor="@color/list_txt_color"
+                                android:textSize="@dimen/app_txt" />
+
+                            <CheckBox
+                                android:id="@+id/check_sms"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:paddingLeft="15dp"
+                                android:text="SMS"
+                                android:textColor="@color/list_txt_color"
+                                android:textSize="@dimen/app_txt" />
+
+                            <CheckBox
+                                android:id="@+id/check_voice"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:paddingLeft="15dp"
+                                android:text="Voice"
+                                android:textColor="@color/list_txt_color"
+                                android:textSize="@dimen/app_txt" />
+
+                            <EditText
+                                android:id="@+id/etxt_ac_content"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="top|left"
+                                android:layout_margin="5dp"
+                                android:hint="Content"
+                                android:inputType="textMultiLine"
+                                android:lines="3"
+                                android:paddingLeft="15dp"
+                                android:textColor="@color/list_txt_color"
+                                android:textSize="@dimen/app_txt" />
+
+                            <EditText
+                                android:id="@+id/etxt_ac_since"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="5dp"
+                                android:hint="Action Since(DD-MM-YYYY)"
+                                android:inputType="date"
+                                android:paddingLeft="15dp"
+                                android:textColor="@color/list_txt_color"
+                                android:textSize="@dimen/app_txt" />
+
+                            <EditText
+                                android:id="@+id/etxt_ac_until"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="5dp"
+                                android:hint="Action Until(DD-MM-YYYY)"
+                                android:inputType="date"
+                                android:paddingLeft="15dp"
+                                android:textColor="@color/list_txt_color"
+                                android:textSize="@dimen/app_txt" />
+
+                            <!--<Spinner
+                                android:id="@+id/spinner_dom"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="5dp"
+                                android:paddingLeft="15dp"
+                                android:prompt="@string/spinner_title"
+                                android:textColor="@color/list_txt_color"
+                                android:textSize="@dimen/app_txt" />
+-->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:id="@+id/tv_dom"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_margin="5dp"
+                                        android:text="Run on Every"
+                                        android:textColor="@color/list_txt_color"
+                                        android:textSize="@dimen/app_txt"
+                                        android:paddingLeft="15dp"/>
+
+
+
+                                    <Spinner
+                                        android:id="@+id/spinner_dom"
+                                        android:layout_gravity="center"
+                                        android:layout_toRightOf="@+id/tv_dom"
+                                        android:textColor="@color/list_txt_color"
+                                        android:textSize="@dimen/app_txt"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        />
+
+
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+
+                            <Spinner
+                                android:id="@+id/spinner_ac"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="5dp"
+                                android:paddingLeft="15dp"
+                                android:prompt="@string/spinner_title"
+                                android:textColor="@color/list_txt_color"
+                                android:textSize="@dimen/app_txt" />
+                            <Spinner
+                                android:id="@+id/spinner_service"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="5dp"
+                                android:paddingLeft="15dp"
+                                android:prompt="@string/spinner_title"
+                                android:textColor="@color/list_txt_color"
+                                android:textSize="@dimen/app_txt" />
+                            
+                            <CheckBox
+                                android:id="@+id/check_run_on_save"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:paddingLeft="15dp"
+                                android:layout_marginBottom="5dp"
+                                android:text="Run on Save"
+                                android:textColor="@color/list_txt_color"
+                                android:textSize="@dimen/app_txt" />
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:background="#A000" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.95"
+        android:background="#A000" >
+    </LinearLayout>
+
+</LinearLayout>
