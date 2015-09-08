@@ -1,0 +1,2 @@
+# freeminder
+freeminder-mobile
